@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <br><br><br><br>
+    <!-- Textbox -->
+    <input type="text" id="input" placeholder="0 " onclick="textCheck();"><br><br>
+    <div id="calculator">
+        <!-- Calculator Buttons -->
+        <button class="calcButton opButton" id="clear" style="width: 23rem;" onclick="checkTwo(1);">C</button>
+        <button class="calcButton opButton" onclick="buttonPress('&#41;')">&#40;</button>
+        <button class="calcButton opButton" onclick="buttonPress('&#41;')">&#41;</button><br>
+        <button class="calcButton" onclick="buttonPress(1);">1</button>
+        <button class="calcButton" onclick="buttonPress(2);">2</button>
+        <button class="calcButton" onclick="buttonPress(3);">3</button>
+        <button class="calcButton opButton" onclick="buttonPress('+');">+</button><br>
+        <button class="calcButton" onclick="buttonPress(4);">4</button>
+        <button class="calcButton" onclick="buttonPress(5);">5</button>
+        <button class="calcButton" onclick="buttonPress(6);">6</button>
+        <button class="calcButton opButton" onclick="buttonPress('-')">-</button><br>
+        <button class="calcButton" onclick="buttonPress(7);">7</button>
+        <button class="calcButton" onclick="buttonPress(8);">8</button>
+        <button class="calcButton" onclick="buttonPress(9);">9</button>
+        <button class="calcButton opButton" onclick="buttonPress('*')">&#215;</button><br>
+        <button class="calcButton opButton" onclick="buttonPress('.')">.</button>
+        <button class="calcButton" onclick="buttonPress(0);">0</button>
+        <button class="calcButton opButton" onclick="buttonPress('/')">&#247;</button><br>
+        <button class="calcButton opButton" id="equal" style="width: 23rem;"onclick="equalFunction('=');">=</button>
+
+        
+    </div>    
+</body>
+</html>
